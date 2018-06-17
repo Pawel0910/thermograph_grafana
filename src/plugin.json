@@ -1,0 +1,35 @@
+{
+  "type": "app",
+  "name": "ThermoEye",
+  "id": "thermo-eye-manager",
+
+  "info": {
+    "description": "ThermoEye app for viewing and manage data",
+    "author": {
+      "name": "name",
+      "url": "url"
+    },
+    "keywords": ["ThermoEye"],
+    "logos": {
+      "small": "img/3sss_white.svg",
+      "large": "img/3sss_white.svg"
+    },
+    "version": "1.0.0",
+    "updated": "2017-12-14"
+  },
+  "includes": [
+    {
+      "type": "page",
+      "name": "ThermoEye",
+      "component": "AppCtrl",
+      "role": "Viewer",
+      "addToNav": true,
+      "defaultNav": true
+    }
+  ],
+
+  "dependencies": {
+    "grafanaVersion": "4.x.x",
+    "plugins": []
+  }
+}

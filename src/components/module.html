@@ -1,0 +1,18 @@
+<h3 class="page-heading">Start page!</h3>
+<button ng-if="!ctrl.animationOn" ng-click="ctrl.playAnimation()">PLAY ANIMATION</button>
+<button ng-if="ctrl.animationOn" ng-click="ctrl.stopAnimation()">STOP ANIMATION</button>
+
+<label>FPS:
+    <input ng-model="ctrl.timeSpeed">
+</label>
+<button ng-click="ctrl.setTimeSpeed()">SET TIME SPEED</button>
+
+<label>Time:
+    <input ng-model="ctrl.startTime">
+</label>
+<button ng-click="ctrl.setTime()">SET TIME</button>
+
+<div>
+    <div id="heatmap"></div>
+    <div>Time: {{ctrl.time | date: 'dd-MM-yyyy HH:mm:ss.SSS'}}</div>
+</div>
